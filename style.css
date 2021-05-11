@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@font-face {
+    font-family: "Helvetica Ultra Compressed";
+    src: url("fonts/HelveticaLTStd-ExtraComp.otf") format("truetype");
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: black;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    animation: fadein 2s;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.transparent {
+    background: none !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.bw1 {
+    border-width: 1px !important;
+}
+.bw2 {
+    border-width: 2px !important;
+}
+.mr1 {
+    margin-right: 10px !important;
+}
+.mr2 {
+    margin-right: 20px !important;
+}
+.mr3 {
+    margin-right: 30px !important;
+}
+.mt2 {
+    margin-top: 20px !important;
+}
+.relative  {
+    position: relative;
+}
+.center {
+    text-align: center;
+}
+
+img.cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1.6fr;
+    grid-template-rows: 1.9fr;
+    gap: 0px 0px;
+    grid-template-areas: "left-container right-container";
+}
+
+/**
+Gauche
+*/
+.left-container {
+    grid-area: left-container;
+    padding-right: 20px;
+    display: flex;
+}
+header {
+    margin-bottom: 40px;
+    color: #4d4c4c;
+}
+.header-logo {
+    background: url(images/logo.png) no-repeat black;
+    width: 200px;
+    height: 2vw;
+    background-size: 7vw;
+    position:relative;
+    z-index: 999;
+    position: absolute;
+    left:0.7vw;
+    top:0.7vw;
+}
+
+.cross {
+    z-index: 1;
+}
+
+.cross-horizontal{
+    width: 6.7vw;
+    height: 1px;
+    background-color: #4d4c4c;
+    top: 3vw;
+    left: 0px;
+    position: absolute;
+}
+.cross-vertical{
+    width: 1px;
+    height: 95%;
+    background-color: #4d4c4c;
+    top: 0px;
+    left: 3vw;
+    position: absolute;
+}
+
+.disclaimer {
+    position: absolute;
+    top:3.9vw;
+    left:3.2vw;
+    height:500px;
+    font-size:0.5vw;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.disclaimer strong {
+    font-size: 0.6vw;
+    display: block;
+    padding-left: 5px;
+}
+
+/**
+Catégories
+*/
+.categories-container {
+    margin-top: 3.1vw;
+    margin-left: 7vw;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.block-categorie img {
+    display: block;
+    height: 90vh;
+}
+
+.categorie-title {
+    position: absolute;
+    left:0;
+    top:-1vw;
+    font-size: 2vw;
+    width: 100%;
+    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.747);
+    font-family: "Helvetica Ultra Compressed", 'Roboto', sans-serif;
+    z-index: 999;
+}
+
+.hover {
+    position: absolute;
+    background: black;
+    opacity: 0.33;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    display: none;
+}
+
+
+/**
+Droite
+*/
+.right-container {
+    grid-area: right-container;
+    grid-template-areas: "title-artists artists title-agenda agenda";
+    grid-template-columns: 0.1fr 0.3fr 0.1fr 0.5fr;
+    display: grid;
+    position: fixed;
+    right: 0;
+    width: 34.7%;
+    height: 100%;
+}
+
+.block {
+    border-radius: 40px;
+    background: #1D1D1D;
+    padding: 1vw 2vw 1vw 2vw;
+    text-align: center;
+    position: relative;
+}
+.block.border {
+    border:5px solid #141414;
+}
+.block-title {
+    text-align: left;
+}
+.round {
+    background: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 8px solid #707070;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.title-artists {
+    background:url(images/artistes-title.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: title-artists;
+    height:100vh;
+}
+
+.right-container .artists {
+    grid-area: artists;
+    position: relative;
+    margin-top: -50px;
+    margin-left: -2vw;
+}
+
+.right-container .artists .block {
+    width: 8vw;
+    height: 8vw;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+.right-container .artists .block:hover img {
+    transition: .3s ease;
+    opacity: 0.3;
+}
+.right-container .artists .block:hover .middle {
+    opacity: 1;
+}
+
+.right-container .artists .middle {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.right-container .artists .text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.right-container .title-agenda {
+    grid-area: title-agenda;
+    background:url(images/agenda-title.png) no-repeat;
+    background-size: contain;
+    height:100vh;
+}
+
+.right-container .agenda {
+    grid-area: agenda;
+    margin-right: 20px;
+}
+.right-container .agenda .block {
+    text-align: justify;
+    font-size: 0.8vw;
+    /* padding:1vw; */
+}
+
+.right-container .agenda .block h2 {
+    font-size: 1vw;
+}
+.right-container .agenda .block h3 {
+color:black; background-color: white; border-radius: 40px; padding: 5px 15px;
+}
+
+/*=====================================
+            Animations
+======================================*/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-10px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}
