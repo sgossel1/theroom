@@ -1,0 +1,205 @@
+.header-logo {
+    background-color: transparent;
+}
+#background {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+#title h1 {
+    font-size: 8vw;
+    line-height: 0;
+
+}
+#title h2 {
+    font-size: 4vw;
+    line-height: 0;
+}
+
+.cross > * {
+    background-color: rgba(255, 255, 255, 0.199);
+}
+.disclaimer > * {
+    color: rgba(255, 255, 255, 0.199);
+}
+
+h3.title {
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+#introduction {
+    height: 45vw;
+    margin: 0 5vw 5vw 5vw;
+    padding-left: 10vw;
+    position: relative;
+}
+#introduction h3.title {
+    width: 35vw;
+    position: relative;
+    z-index: 999;
+
+}
+#introduction p {
+    position: relative;
+    width: 28vw;
+    z-index: 999;
+}
+
+#introduction .pictures {
+    z-index: 99;
+}
+#introduction .pictures .left-picture-1 {
+    background: url(https://res.cloudinary.com/we-are-theroom/image/upload/v1621376239/home/152483747_817416818813917_4752537186542483765_n_oicxp5.jpg) no-repeat;
+    background-size: 12vw;
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    top:18vw;
+
+}
+#introduction .pictures .left-picture-2 {
+    background: url(https://res.cloudinary.com/we-are-theroom/image/upload/v1621376122/home/148154792_1837387783089493_2942621825553767434_n_dkpecz.jpg) no-repeat;
+    background-size: 20vw;
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    left:15vw;
+    top:25vw;
+}
+#introduction .pictures .central-picture {
+    background: url(https://res.cloudinary.com/we-are-theroom/image/upload/v1621369003/home/77189588_462307901329607_3317275609188674973_n_rvqph5.jpg) no-repeat;
+    background-size: 28vw;
+    position: absolute;
+    width: 28vw;
+    height: 28vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+#introduction .pictures .right-picture-1 {
+    background: url(https://res.cloudinary.com/we-are-theroom/image/upload/v1621376321/home/125432990_2873844859514375_2322329046249725202_n_tjsqad.jpg) no-repeat;
+    background-size: 18vw;
+    position: absolute;
+    width: 18vw;
+    height: 18vw;    
+    right: 10vw;
+    z-index: -1;
+}
+#introduction .pictures .right-picture-2 {
+    background: url(https://res.cloudinary.com/we-are-theroom/image/upload/v1621376358/home/118695470_315019576474403_8385762060569558762_n_qgwuo3.jpg) no-repeat;
+    background-size: 12vw;
+    position: absolute;
+    width: 12vw;
+    right: 0;
+    height: 12vw;  
+    right:12vw;
+    top:22vw;      
+}
+
+#social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vw;
+    position: relative;
+}
+
+
+#social .social-username {
+    width: auto;
+    height: 3vw;
+    line-height: 3vw;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#social .instagram .instagram-logo {
+    background: url(https://res.cloudinary.com/we-are-theroom/image/upload/v1620303075/home/1024x1024_insta_nhhkxz.png) no-repeat;
+    background-size: 5vw;
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    vertical-align: middle;
+}
+#social .instagram .social-username {
+    /* background: red; */
+}
+
+#social .twitter .twitter-logo {
+    background: url(https://res.cloudinary.com/we-are-theroom/image/upload/v1620303739/home/1024x1024_twitter_k7cbh4.png) no-repeat;
+    background-size: 5vw;
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    vertical-align: middle;
+}
+#social .twitter .social-username {
+    /* background: blue; */
+}
+
+#projects, #articles {
+    padding: 5vw 5vw 0vw 5vw;
+}
+#articles .articles-list, #projects .projects-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#articles .article, #projects .project {
+    display: table-cell;
+    width: 13vw;
+    height: 20vw;
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-radius: 30px;
+    padding: 1vw;
+    font-size: 1.8vw;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: center;
+}
+#articles .article {
+    background:black;
+    font-size: 1.2vw;
+}
+
+.gradient-border {
+    --borderWidth: 3px;
+    position: relative;
+    border:none !important;
+}
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 30px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
