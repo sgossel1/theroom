@@ -34,6 +34,7 @@ article {
     width: 40vw;
     margin: 5vw 5vw 5vw 15vw;
     text-align: justify;
+    position: relative;
 }
 
 article iframe {
