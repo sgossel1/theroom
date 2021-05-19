@@ -11,31 +11,33 @@
     height: 30vw;
 }
 #header-article  {
+    width: 80vw;
+    margin-top: 1vw;
     margin-left: 15vw;
-    padding-top: 8vw;
-    width: 85vw;
 }
 #header-article h1 {
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 3vw;    
-    line-height: 0.5;
+    font-size: 5vw;    
+    text-transform:uppercase;
+    padding-bottom: 0;
 }
-
 #header-article h2 {
-    line-height: 0;
     font-weight: normal;
-}
+    font-size: 1.5vw;    
+    color:rgb(255, 208, 0);
+    line-height: 0;
+    /* font-family: 'Roboto', sans-serif; */
 
-#article-illustration {
-    position: absolute;
-    right: 0;
-    background:url(https://res.cloudinary.com/we-are-theroom/image/upload/v1621376358/home/118695470_315019576474403_8385762060569558762_n_qgwuo3.jpg) no-repeat center/cover;
-    width: 100%;
-    height: 30vw;
-    z-index: -999;
 }
 
 article {
-    margin: 25vw 5vw 5vw 15vw;
+    width: 40vw;
+    margin: 5vw 5vw 5vw 15vw;
+    text-align: justify;
+}
+
+article iframe {
+    margin: 2vw 0;
+    width: 40vw;
+    height: 20vw;
 }
