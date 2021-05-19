@@ -333,6 +333,26 @@ Droite
 color:black; background-color: white; border-radius: 40px; padding: 5px 15px;
 }
 
+
+/*=====================================
+                Footer
+======================================*/
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    margin: 10vw 0 2vw 0;
+    color: #7b7b7b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    outline-style:none;
+}
+
 /*=====================================
             Animations
 ======================================*/
