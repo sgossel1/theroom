@@ -354,6 +354,46 @@ footer a {
 }
 
 /*=====================================
+            Mentions légales
+======================================*/
+
+.popup#legal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -12%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+    background: black;
+    padding: 50px;
+    letter-spacing: 0;
+    width: 40%;
+    left: 42%;
+}
+.popup#legal a.close {
+    margin-bottom: 20px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+}
+.popup#legal h3 {
+    font-style: normal;
+    font-weight: 800;
+    line-height: 36px;
+    font-size: 30px;
+    letter-spacing: -0.6px;
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'HankenSans-ExtraBold';
+    padding-bottom: 10px;
+}
+
+/*=====================================
             Animations
 ======================================*/
 
